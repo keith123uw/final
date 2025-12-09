@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Commuter Collisions Near UW: About</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body class="page">
+
+    <main class="page-main">
+        <header>
+            <h1>Commuter Collisions Near the University of Washington</h1>
+            <p class="subtitle">
+                An interactive web map exploring traffic collisions around the UW Seattle campus by time of day and day of week.
+            </p>
+        </header>
+
+        <section id="project-description">
+            <h2>Project Description</h2>
+            <p>
+                This project is an analysis of motor vehicle collisions associated with commuting to and around the University of Washington (UW) Seattle campus. Using historical collision records from the Seattle Department of Transportation (SDOT), the web map visualizes when and where traffic-related incidents occur in the areas most heavily used by daily commuters, including students, faculty, staff, and surrounding residents. That is, roads and areas around and a part of UW campus.
+            </p>
+            <p>
+                The study area focuses on major commuter corridors and neighborhoods such as University District, West Campus, East Campus, Montlake, and nearby segments of I-5 and SR-520. These locations experience high traffic volumes due to class schedules and work hours, making them particularly relevant for understanding collision risk.
+            </p>
+            <p>
+                Collisions are represented as point features and symbolized according to severity, combining injury and fatality counts under casualties to scale circle size and color intensity. Interactive controls allow users to filter collisions by hour of day and by weekday versus weekend, revealing notable patterns such as peak commute hours or differences between weekday and weekend business.
+            </p>
+            <p>
+                By transforming static collision records into an interactive time map, this project lets users to explore how commuting patterns intersect with traffic safety near UW. The visualization is intended to support personal awareness for commuters while also providing contextual insight into when and where collisions are most likely to occur.
+            </p>
+        </section>
+
+        <section id="favicon">
+            <h2>Favicon</h2>
+            <p>
+                This project uses a custom favicon to represent motor vehicle collisions near the UW campus:
+            </p>
+            <p>
+                <img src="img/favicon.png" alt="Commuter Collisions favicon" width="100" height="100">
+            </p>
+        </section>
+
+        <section id="project-goal">
+            <h2>Project Goal</h2>
+            <p>
+                As a daily commuter to the University of Washington, this project comes from direct experience with recurring traffic delays and unexpected congestion near campus. On multiple occasions, commute times were significantly impacted by collisions or sudden traffic slowdowns, which resulted in late arrivals and major inconveniences. These repeated experiences highlighted how difficult it can be for commuters to anticipate risk without access to clear, spatially contextualized information.
+            </p>
+
+            <p>
+                The primary goal of this project is to provide an interactive mapping tool that allows commuters to better understand when and where collision disruptions are most likely to occur. By visualizing historical collision patterns by time of day and day of week, the map enables users to identify risky periods and corridors and adjust their routes or timing accordingly.
+            </p>
+
+            <p>
+                While the application does not predict future incidents, it offers a perspective on consistent patterns that may influence route selection, departure times, and general awareness for those traveling to and around the UW campus. In this way, the project bridges personal commuting experience with broader spatial analysis to support more informed and resilient travel planning.
+            </p>
+        </section>
+
+        <section id="application-url">
+            <h2>Application URL</h2>
+            <p>
+                The live web map is hosted on GitHub Pages at:<br>
+                <a href="https://keith123uw.github.io/uw-commuters/index">
+                    https://keith123uw.github.io/uw-commuters/index
+                </a>
+            </p>
+        </section>
+
+        <section id="screenshots">
+            <h2>Screenshots</h2>
+            <figure>
+                <img src="img/map.png" alt="Main collision map interface" style="max-width:100%;">
+                <figcaption>Main map view showing collision points and the sidebar legend.</figcaption>
+            </figure>
+            <figure>
+                <img src="img/legend.png" alt="Time and day filters in use" style="max-width:100%; margin-top:16px;">
+                <figcaption>Time-of-day slider and weekday/weekend filters highlighting peak collision hours.</figcaption>
+            </figure>
+        </section>
+
+        <section id="main-functions">
+            <h2>Main Functions</h2>
+            <ul>
+                <li>
+                    <strong>Time-of-day filter:</strong> slider to view collisions occurring at specific hours (0–23) using derived time attributes.
+                </li>
+                <li>
+                    <strong>Day-of-week filter:</strong> toggle between all days, weekdays, and weekends using a combined filter expression.
+                </li>
+                <li>
+                    <strong>Severity visualization:</strong> collisions symbolized by combined injury and fatality counts using a red-anchored color ramp and scaled circle sizes.
+                </li>
+                <li>
+                    <strong>Focused study area:</strong> map centered on the UW Seattle campus and key commuter corridors such as I-5 and SR-520.
+                </li>
+            </ul>
+        </section>
+
+        <section id="data-sources">
+            <h2>Data Sources</h2>
+            <ul class="dataset-list">
+                <li>
+                    <a href="https://data-seattlecitygis.opendata.arcgis.com/datasets/SeattleCityGIS::sdot-collisions-all-years"
+                       target="_blank">
+                        SDOT Collisions – All Years (Seattle GeoData)
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="libraries-services">
+            <h2>Applied Libraries and Web Services</h2>
+            <ul class="dataset-list">
+                <li>
+                    <strong>Mapbox GL JS</strong> – used for rendering the interactive web map, custom layer styling, and filter expressions.
+                </li>
+                <li>
+                    <strong>Mapbox Navigation Night basemap</strong> – underlying basemap style providing road network context for the UW area.
+                </li>
+                <li>
+                    <strong>GitHub Pages</strong> – static hosting for the web application and GeoJSON data.
+                </li>
+                <li>
+                    <strong>Mapbox Show Changes Over Time Tutorial</strong> – essential template used for this project.
+                </li>
+            </ul>
+        </section>
+
+        <section id="acknowledgments">
+            <h2>Acknowledgments</h2>
+            <p>
+                Mapbox "Show changes over time with Mapbox" template and tutorial was essential to the making of this website.
+            </p>
+        </section>
+
+        <section id="ai-use">
+            <h2>AI Use Disclosure</h2>
+            <p>
+                ChatGPT used for favicon generation and casualty color ramp.
+            </p>
+        </section>
+
+        <section id="other-notes">
+            <h2>Additional Notes</h2>
+            <p>
+            </p>
+        </section>
+    </main>
+
+    <div id="sidebar-right">
+        <ul>
+            <li><a href="index.html">Map</a></li>
+            <li><a href="about.html">About the Project</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
